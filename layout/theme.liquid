@@ -1,8 +1,10 @@
 <html>
     <head>
+        {% render 'pagefly-header' %}
         {{content_for_header}}
     </head>
     <body>
+        {% section 'announcement' %}
         <main id="main" role="main">
             {{content_for_layout}}
         </main>
